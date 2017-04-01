@@ -16,7 +16,7 @@ def sanitize(name):
   if('chapter' in df.columns):
     df.drop(df[['chapter','first name','last name']] , axis=1, inplace=True)
 
-  ethnicity_dic = {'chinese':['malaysian chinese','chinese'], 'malay':'malay', 'indian':'indian', 'others':'kadazan'}
+  ethnicity_dic = {'chinese':['malaysian chinese','chinese'], 'malay':'malay', 'indian':'indian', 'others':['kadazan','punjabi']}
   year_dic = {0:['0','others','graduated','pre-u'],
               1:['1','1st','first','freshman','year 1','1st year of study','1st year'],
               2:['2','2nd','second','second year','sophomore', 'year 2'],
